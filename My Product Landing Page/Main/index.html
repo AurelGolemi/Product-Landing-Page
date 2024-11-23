@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="menu-container">
+      <button id="menu-toggle" class="menu-button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav id="responsive-menu" class="hidden">
+        <div class="user-header">
+          <img class="logo" src="/Landing Page/Logos/style-accord.webp" alt="Style Accord">
+
+          <ul>
+            <li><a id="my-account" class="links" href="/My Account/myaccount.html">My Account</a></li>
+            <li><a id="find-a-store" class="links" href="#">Find a Store</a></li>
+            <li><a id="help" class="links" href="#">Help</a></li>
+            <li><a id="track-my-order" class="links" href="#">Track My Order</a></li>
+            <li><a id="wishlist" class="links" href="#">Wishlist 🖤</a></li>
+          </ul>
+        </div>
+
+        <div class="search-and-language">
+          <input type="text" name="search" id="search" placeholder="Search products">
+          <select name="languages" id="languages">
+            <option value="english" selected="selected">English</option>
+            <option value="greek">Greek</option>
+            <option value="german">German</option>
+          </select>
+        </div>
+
+
+
+
+        <div class="client-header">
+          <ul>
+            <li><a id="offers" class="links" href="#">Offers</a></li>
+            <li><a id="new-in" class="links" href="#">New In</a></li>
+            <li><a id="men" class="links" href="#">Men</a></li>
+            <li><a id="women" class="links" href="#">Women</a></li>
+            <li><a id="kids" class="links" href="#">Kids</a></li>
+            <li><a id="accessories" class="links" href="#">Accessories</a></li>
+            <li><a id="brands" class="links" href="#">Brands</a></li>
+            <li><a id="collections" class="links" href="#">Collections</a></li>
+            <li><a id="only-at-style-accord" class="links" href="#">Only at Style Accord</a></li>
+          </ul>
+
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+    <div id="slideshow" class="slideshow">
+      <div class="mySlides">
+        <img class="slide fade image" src="/Landing Page/Slideshow/mid-season-offers.jpg" style="
+        width: 100%;
+        text-align: center;
+        ">
+      </div>
+      <div class="mySlides">
+        <img class="slide fade image" src="/Landing Page/Slideshow/cold-season-prep.jpg" style="
+        width: 100%;
+        text-align: center;
+        ">
+      </div>
+      <div class="mySlides">
+        <img class="slide fade image" src="/Landing Page/Slideshow/layers-on-lock.jpg" style="
+        width: 100%;
+        text-align: center;
+        ">
+      </div>
+      <div class="mySlides">
+        <img class="slide fade image" src="/Landing Page/Slideshow/new-footwear.jpg" style="
+        width: 100%;
+        text-align: center;
+        ">
+      </div>
+
+
+
+      <button class="slideshow-btn left" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="slideshow-btn right" onclick="changeSlide(1)">&#10095;</button>
+
+      <button class="shop-now">Shop Now</button>
+
+      <div class="dots-container">
+        <span class="dot" onclick="setSlide(1)"></span>
+        <span class="dot" onclick="setSlide(2)"></span>
+        <span class="dot" onclick="setSlide(3)"></span>
+        <span class="dot" onclick="setSlide(4)"></span>
+      </div>
+    </div>
+    <div class="brands">
+      <h2 class="brands-you-love">Your Favourite Brands</h2>
+      <div class="logo-slider">
+        <a class="brand-links" href="#">
+          <img class="brand-logos" src="/Landing Page/Logos/Brand-Logos/nike.webp" alt="Nike">
+        </a>
+        <a class="brand-links" href="#">
+          <img class="brand-logos" src="/Landing Page/Logos/Brand-Logos/adidas.webp" alt="Adidas">
+        </a>
+        <a class="brand-links" href="#">
+          <img class="brand-logos" src="/Landing Page/Logos/Brand-Logos/hoodrich.webp" alt="Hoodrich">
+        </a>
+        <a class="brand-links" href="#">
+          <img class="brand-logos" src="/Landing Page/Logos/Brand-Logos/jordan.webp" alt="Jordan">
+        </a>
+        <a class="brand-links" href="#">
+          <img class="brand-logos" src="/Landing Page/Logos/Brand-Logos/the-north-face.webp" alt="  The North Face">
+        </a>
+        <a class="brand-links" href="#">
+          <img class="brand-logos" src="/Landing Page/Logos/Brand-Logos/converse.webp" alt="Converse">
+        </a>
+        <a class="brand-links" href="#">
+          <img class="brand-logos" src="/Landing Page/Logos/Brand-Logos/new-balance.webp" alt=" New Balance">
+        </a>
+        <a class="brand-links" href="#">
+          <img class="brand-logos" src="/Landing Page/Logos/Brand-Logos/ugg.webp" alt="UGG">
+        </a>
+        <a class="brand-links" href="#">
+          <img class="brand-logos" src="/Landing Page/Logos/Brand-Logos/puma.webp" alt="Puma">
+        </a>
+        <a class="brand-links" href="#">
+          <img class="brand-logos" src="/Landing Page/Logos/Brand-Logos/ea7.webp" alt="EA7">
+        </a>
+        <a class="brand-links" href="#">
+          <img class="brand-logos" src="/Landing Page/Logos/Brand-Logos/vans-off-the-wall.webp" alt="Vans Off The Wall">
+        </a>
+        <a class="brand-links" href="#">
+          <img class="brand-logos" src="/Landing Page/Logos/Brand-Logos/supply-and-demand.webp" alt="Supply And Demand">
+        </a>
+        <a class="brand-links" href="#">
+          <img class="brand-logos" src="/Landing Page/Logos/Brand-Logos/asics.webp" alt="Asics">
+        </a>
+        <a class="brand-links" href="#">
+          <img class="brand-logos" src="/Landing Page/Logos/Brand-Logos/mckenzie.webp" alt="McKenzie">
+        </a>
+      </div>
+
+
+    </div>
+
+    <div class="shop-the-look">
+      <h2 class="shop-the-look-title">Shop the Look</h2>
+      <div class="shop-buttons">
+        <button class="shop-clients" onclick="filterProducts('shop-men-clothing')">Shop Men's</button>
+        <button class="shop-clients" onclick="filterProducts('shop-women-clothing')">Shop Women's</button>
+        <button class="shop-clients" onclick="filterProducts('shop-kids-clothing')">Shop Kids'</button>
+      </div>
+
+      <div class="shop-men">
+        <div class="outfits shop-men-clothing">
+          <img src="/Landing Page/Men's clothing/nike-tech-fleece-jacket.jpg">
+          <p class="price">€119.99</p>
+          <p class="initial-price">€119.99 Initial Price</p>
+          <p class="product">Nike Tech Fleece Men's Track Top</p>
+        </div>
+        <div class="outfits shop-men-clothing">
+          <img src="/Landing Page/Men's clothing/adidas-originals-sl-72-rs.jpg">
+          <p class="price">€100.00</p>
+          <p class="initial-price">€100.00 Initial Price</p>
+          <p class="product">Adidas Originals SL 72 RS Men's Shoes</p>
+        </div>
+        <div class="outfits shop-men-clothing">
+          <img src="/Landing Page/Men's clothing/adidas-mufc-og-hd.jpg">
+          <p class="price">€100.00</p>
+          <p class="initial-price">€100.00 Initial Price</p>
+          <p class="product">Adidas Manchester United FC Men's Hoodie</p>
+        </div>
+        <div class="outfits shop-men-clothing">
+          <img src="/Landing Page/Men's clothing/new-balance-1000-papoutsi-classics.jpg">
+          <p class="price">€169.95</p>
+          <p class="initial-price">€169.95 Initial Price</p>
+          <p class="product">New Balance M1000 Unisex Shoes</p>
+        </div>
+      </div>
+      <div class="shop-women">
+        <div class="outfits shop-women-clothing">
+          <img src="/Landing Page/Women's clothing/hoodrich-intel-v2-legging-blk.jpg">
+          <p class="price">€32.00</p>
+          <p class="initial-price">€32.00 Initial Price</p>
+          <p class="product">Hoodrich Intel V2 Women's Leggings</p>
+        </div>
+        <div class="outfits shop-women-clothing">
+          <img src="/Landing Page/Women's clothing/converse-run-star-hike.jpg">
+          <p class="price">€80.00</p>
+          <p class="initial-price">€80.00 Initial Price</p>
+          <p class="product">Converse Run Star Hike Women's Platform Boots</p>
+        </div>
+        <div class="outfits shop-women-clothing">
+          <img src="/Landing Page/Women's clothing/the-north-face-summit-oh-hd-khk-wh.jpg">
+          <p class="price">€60.00</p>
+          <p class="initial-price">€60.00 Initial Price</p>
+          <p class="product">The North Face Summit Women's Hoodie</p>
+        </div>
+        <div class="outfits shop-women-clothing">
+          <img src="/Landing Page/Women's clothing/new-balance-ct302-papoutsi-court.jpg">
+          <p class="price">€75.00</p>
+          <p class="initial-price">€75.00 Initial Price</p>
+          <p class="product">New Balance CT302 Women's Shoes</p>
+        </div>
+      </div>
+
+      <div class="shop-kids">
+        <div class="outfits shop-kids-clothing">
+          <img src="/Landing Page/Kids clothing/nike-miler-t-sht-org-gry.jpg">
+          <p class="price">€20.00</p>
+          <p class="initial-price">€20.00 Initial Price</p>
+          <p class="product">Nike Miler Infant's Set</p>
+        </div>
+        <div class="outfits shop-kids-clothing">
+          <img src="/Landing Page/Kids clothing/mckenzie-ess-edge-flc-pnt-2-blk.jpg">
+          <p class="price">€15.00</p>
+          <p class="initial-price">€24.00 Initial Price</p>
+          <p class="product">McKenzie Essential Edge Kids' Track Pants</p>
+        </div>
+        <div class="outfits shop-kids-clothing">
+          <img src="/Landing Page/Kids clothing/nike-revolution-6-nn-psv.jpg">
+          <p class="price">€35.00</p>
+          <p class="initial-price">€35.00 Initial Price</p>
+          <p class="product">Nike Revolution 6 Kids' Running Shoes</p>
+        </div>
+        <div class="outfits shop-kids-clothing">
+          <img src="/Landing Page/Kids clothing/converse-chuck-taylor-all-star.jpg">
+          <p class="price">€45.00</p>
+          <p class="initial-price">€55.00 Initial Price</p>
+          <p class="product">Converse Chuck Taylor All Star High Kids' Boots</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="shop-brands">
+      <div class="new-balance">
+        <img src="/Landing Page/Brand Clothing/new-balance-footwear.webp">
+        <a href="#">New Balance Footwear →</a>
+      </div>
+      <div class="emporio-armani">
+        <img src="/Landing Page/Brand Clothing/ea7-clothing.webp">
+        <a href="#">Emporio Armani Clothing →</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+
+    <div class="email-login-discount">
+      <h2>Get 20% off your first online order when you spend over 50€</h2>
+      <p>Sign up for the latest Style Accord news, products and offers</p>
+      <input type="text" placeholder="Enter your email address">
+      <button type="submit"> → </button>
+
+      <p class="privacy">We'll use your information in accordance to our Privacy Notice.</p>
+      <p class="privacy">Terms & Condtitions Applied</p>
+    </div>
+
+    <hr>
+
+    <div class="support">
+      <div class="shopping-with-s&a">
+        <p>Shopping with Style Accord</p>
+        <a href="#">Find a Store or Pick up Point</a>
+        <a href="#">Payment Methods</a>
+        <a href="#">BOX NOW</a>
+      </div>
+      <div class="customer-care">
+        <p>Customer Care</p>
+        <a href="#">Contact</a>
+        <a href="#">Help</a>
+        <a href="#">Delivery & Returns</a>
+      </div>
+      <div class="corporate">
+        <p>Corporate</p>
+        <a href="#">Careers</a>
+        <a href="#">Style Accord Fashion Plc</a>
+      </div>
+      <div class="legal">
+        <p>Legal</p>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookies Policy</a>
+        <a href="#">Cookie Declaration</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/78055d794c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
