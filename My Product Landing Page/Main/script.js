@@ -68,3 +68,71 @@ function scrollLogos(direction) {
   });
 }
 
+// Live chat functionality
+
+const chatToggle = document.getElementById('chat-toggle');
+const chatBox = document.getElementById('chat-box');
+const chatClose = document.getElementById('chat-close');
+const chatBody = document.getElementById('chat-body');
+const chatInput = document.getElementById('chat-input');
+const sendButton = document.getElementById('send-button');
+const options = document.querySelectorAll('.chat-option');
+
+// Toggle chat visibility
+chatToggle.addEventListener('click', () => {
+  chatBox.classList.toggle = 'visible';
+});
+
+chatClose.addEventListener('click', () => {
+  chatBox.classList.remove = 'visible';
+});
+
+// Handle option selection
+options.forEach(option => {
+  option.addEventListener('click', (e) => {
+    const response = e.target.getAttribute('data-response');
+    appendUserMessage(response);
+    handleBotResponse(response);
+  });
+});
+
+// Send user input
+sendButton.addEventListener('click', () => {
+  const message = chatInput.value.trim();
+  if (message) {
+    appendUserMessage(message);
+    handleBotResponse(message);
+    chatInput.value = '';
+  }
+});
+
+// Append user message
+function appendUserMessage(message) {
+  const userMessage = document.createElement('p');
+  userMessage.className = 'user-message';
+  userMessage.textContent = message;
+  chatBody.appendChild(userMessage);
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
+
+// Handle bot response
+function handleBotResponse(message) {
+  const botMessage = document.createElement('p');
+  botMessage.className = 'bot-message';
+
+  if(message.includes('👖 Looking for clothes')) {
+    botMessage.textContent = 'Great! Are you shopping for men, women or kids?';
+  } else if(message.includes('🌍 Where to buy')) {
+    botMessage.textContent = 'You can shop online or visit our nearest store.';
+  } else if(message.includes('❓ Recommendations')) {
+    botMessage.textContent = 'We recommend checking out our latest collections for the season.';
+  } else if(message.includes('🚚 Delivery options')) {
+    botMessage.textContent = 'Please provide your address for delivery.';
+  } else {
+    botMessage.textContent = 'Thank you for reaching out! How else can we assist you?';
+  }
+
+  chatBody.appendChild(botMessage);
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
+
