@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #2f2f2f;
+  width: 100%;
+}
+
+#parent {
+  display: flex;
+  align-items: stretch;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  background-color: #333;
+  flex-direction: column;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu .active {
+  display: flex;
+}
+
+.menu-item {
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 2px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.menu a {
+  padding: 5px 10px;
+}
+
+.submenu {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.submenu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+
+.submenu a:hover {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.adidas-clothing {
+  position: relative;
+  color: #fff;
+  width: 100%;
+  margin: 0 20px;
+  padding: 16px;
+}
+
+.adidas-clothing h2 {
+  padding: 10px 16px;
+  background-color: #444;
+}
+
+.product-type-btn {
+  padding: 10px 16px;
+  background-color: #444;
+}
+
+.product-type-btn button {
+  background-color: #2f2f2f;
+  border: 1px solid #ddd;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.product-type-btn button:hover {
+  background-color: #444;
+}
+
+.product-type-btn a {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+#adidas-clothing #clothing-picks {
+  background-color: #2f2f2f;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 16px;
+  margin-bottom: 12px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.adidas-clothing p {
+  padding: 10px 16px;
+}
+
+.adidas-clothing .grid-3x3, .adidas-clothing .grid-4x4{
+  background-color: #2f2f2f;
+  border: 1px solid #fff;
+  padding: 10px 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.adidas-clothing .grid-3x3:hover, .adidas-clothing .grid-4x4:hover {
+  background-color: #444;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu .active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+

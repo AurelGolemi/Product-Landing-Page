@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Landing Page</title>
   <link rel="stylesheet" href="styles.css">
+  
 
 </head>
 
@@ -18,14 +19,14 @@
 
       <nav id="responsive-menu" class="hidden">
         <div class="user-header">
-          <img class="logo" src="../Landing Page/Logos/style-accord.webp" alt="Style Accord">
+          <a href="index.html"><img class="logo" src="../Landing Page/Logos/style-accord.webp" alt="Style Accord"></a>
 
           <ul>
-            <li><a id="my-account" class="links" href="../My Account/myaccount.html">My Account</a></li>
-            <li><a id="find-a-store" class="links" href="#">Find a Store</a></li>
-            <li><a id="help" class="links" href="#">Help</a></li>
-            <li><a id="track-my-order" class="links" href="#">Track My Order</a></li>
-            <li><a id="wishlist" class="links" href="#">Wishlist 🖤</a></li>
+            <li><a id="my-account" class="links" href="../User/My Account/myaccount.html">My Account</a></li>
+            <li><a id="find-a-store" class="links" href="../User/Find a Store/store.html">Find a Store</a></li>
+            <li><a id="help" class="links" href="../User/Help/help.html">Help</a></li>
+            <li><a id="track-my-order" class="links" href="../User/Track My Order/trackorder.html">Track My Order</a></li>
+            <li><a id="wishlist" class="links" href="../User/Wishlist/wishlist.html">Wishlist 🖤</a></li>
           </ul>
         </div>
 
@@ -38,20 +39,17 @@
           </select>
         </div>
 
-
-
-
         <div class="client-header">
           <ul>
-            <li><a id="offers" class="links" href="#">Offers</a></li>
-            <li><a id="new-in" class="links" href="#">New In</a></li>
-            <li><a id="men" class="links" href="#">Men</a></li>
-            <li><a id="women" class="links" href="#">Women</a></li>
-            <li><a id="kids" class="links" href="#">Kids</a></li>
-            <li><a id="accessories" class="links" href="#">Accessories</a></li>
-            <li><a id="brands" class="links" href="#">Brands</a></li>
-            <li><a id="collections" class="links" href="#">Collections</a></li>
-            <li><a id="only-at-style-accord" class="links" href="#">Only at Style Accord</a></li>
+            <li><a id="offers" class="links" href="../Client/Offers/offers.html">Offers</a></li>
+            <li><a id="new-in" class="links" href="../Client/New In/new-in.html">New In</a></li>
+            <li><a id="men" class="links" href="../Client/Men/men.html">Men</a></li>
+            <li><a id="women" class="links" href="../Client/Women/women.html">Women</a></li>
+            <li><a id="kids" class="links" href="../Client/Kids/kids.html">Kids</a></li>
+            <li><a id="accessories" class="links" href="../Client/Accessories/accessories.html">Accessories</a></li>
+            <li><a id="brands" class="links" href="../Client/Brands/brands.html">Brands</a></li>
+            <li><a id="collections" class="links" href="../Client/Collections/collections.html">Collections</a></li>
+            <li><a id="only-at-style-accord" class="links" href="../Client/Only At Style Accord/styleaccord.html">Only at Style Accord</a></li>
           </ul>
 
         </div>
@@ -63,6 +61,12 @@
 
   <main>
     <div id="slideshow" class="slideshow">
+      <div class="mySlides">
+        <img class="slide fade image" src="../Landing Page/Slideshow/family.jpg" style="
+          width: 100%;
+          text-align: center;
+          ">
+      </div>
       <div class="mySlides">
         <img class="slide fade image" src="../Landing Page/Slideshow/mid-season-offers.jpg" style="
         width: 100%;
@@ -100,51 +104,52 @@
         <span class="dot" onclick="setSlide(2)"></span>
         <span class="dot" onclick="setSlide(3)"></span>
         <span class="dot" onclick="setSlide(4)"></span>
+        <span class="dot" onclick="setSlide(5)"></span>
       </div>
     </div>
     <div class="brands">
       <h2 class="brands-you-love">Your Favourite Brands</h2>
       <div class="logo-slider">
-        <a class="brand-links" href="#">
+        <a class="brand-links" href="../Brands Section/nike.html">
           <img class="brand-logos" src="../Landing Page/Logos/Brand-Logos/nike.webp" alt="Nike">
         </a>
-        <a class="brand-links" href="#">
+        <a class="brand-links" href="../Brands Section/adidas.html">
           <img class="brand-logos" src="../Landing Page/Logos/Brand-Logos/adidas.webp" alt="Adidas">
         </a>
-        <a class="brand-links" href="#">
+        <a class="brand-links" href="../Brands Section/hoodrich.html">
           <img class="brand-logos" src="../Landing Page/Logos/Brand-Logos/hoodrich.webp" alt="Hoodrich">
         </a>
-        <a class="brand-links" href="#">
+        <a class="brand-links" href="../Brands Section/jordan.html">
           <img class="brand-logos" src="../Landing Page/Logos/Brand-Logos/jordan.webp" alt="Jordan">
         </a>
-        <a class="brand-links" href="#">
+        <a class="brand-links" href="../Brands Section/northface.html">
           <img class="brand-logos" src="../Landing Page/Logos/Brand-Logos/the-north-face.webp" alt="  The North Face">
         </a>
-        <a class="brand-links" href="#">
+        <a class="brand-links" href="../Brands Section/converse.html">
           <img class="brand-logos" src="../Landing Page/Logos/Brand-Logos/converse.webp" alt="Converse">
         </a>
-        <a class="brand-links" href="#">
+        <a class="brand-links" href="../Brands Section/newbalance.html">
           <img class="brand-logos" src="../Landing Page/Logos/Brand-Logos/new-balance.webp" alt=" New Balance">
         </a>
-        <a class="brand-links" href="#">
+        <a class="brand-links" href="../Brands Section/ugg.html">
           <img class="brand-logos" src="../Landing Page/Logos/Brand-Logos/ugg.webp" alt="UGG">
         </a>
-        <a class="brand-links" href="#">
+        <a class="brand-links" href="../Brands Section/puma.html">
           <img class="brand-logos" src="../Landing Page/Logos/Brand-Logos/puma.webp" alt="Puma">
         </a>
-        <a class="brand-links" href="#">
+        <a class="brand-links" href="../Brands Section/ea7.html">
           <img class="brand-logos" src="../Landing Page/Logos/Brand-Logos/ea7.webp" alt="EA7">
         </a>
-        <a class="brand-links" href="#">
+        <a class="brand-links" href="../Brands Section/vansoffthewall.html">
           <img class="brand-logos" src="../Landing Page/Logos/Brand-Logos/vans-off-the-wall.webp" alt="Vans Off The Wall">
         </a>
-        <a class="brand-links" href="#">
+        <a class="brand-links" href="../Brands Section/supplyanddemand.html">
           <img class="brand-logos" src="../Landing Page/Logos/Brand-Logos/supply-and-demand.webp" alt="Supply And Demand">
         </a>
-        <a class="brand-links" href="#">
+        <a class="brand-links" href="../Brands Section/asics.html">
           <img class="brand-logos" src="../Landing Page/Logos/Brand-Logos/asics.webp" alt="Asics">
         </a>
-        <a class="brand-links" href="#">
+        <a class="brand-links" href="../Brands Section/mckenzie.html">
           <img class="brand-logos" src="../Landing Page/Logos/Brand-Logos/mckenzie.webp" alt="McKenzie">
         </a>
       </div>
@@ -159,84 +164,84 @@
         <button class="shop-clients" onclick="filterProducts('shop-women-clothing')">Shop Women's</button>
         <button class="shop-clients" onclick="filterProducts('shop-kids-clothing')">Shop Kids'</button>
       </div>
-
-      <div class="shop-men">
+      
+      <div id="men" class="shop-men">
         <div class="outfits shop-men-clothing">
-          <img src="../Landing Page/Men's clothing/nike-tech-fleece-jacket.jpg">
+          <a href="#"><img src="../Landing Page/Men's clothing/nike-tech-fleece-jacket.jpg"></a>
           <p class="price">€119.99</p>
           <p class="initial-price">€119.99 Initial Price</p>
-          <p class="product">Nike Tech Fleece Men's Track Top</p>
+          <p class="product"><a href="#">Nike Tech Fleece Men's Track Top</a></p>
         </div>
         <div class="outfits shop-men-clothing">
-          <img src="../Landing Page/Men's clothing/adidas-originals-sl-72-rs.jpg">
+          <a href="#"><img src="../Landing Page/Men's clothing/adidas-originals-sl-72-rs.jpg"></a>
           <p class="price">€100.00</p>
           <p class="initial-price">€100.00 Initial Price</p>
-          <p class="product">Adidas Originals SL 72 RS Men's Shoes</p>
+          <p class="product"><a href="#">Adidas Originals SL 72 RS Men's Shoes</a></p>
         </div>
         <div class="outfits shop-men-clothing">
-          <img src="../Landing Page/Men's clothing/adidas-mufc-og-hd.jpg">
+          <a href="#"><img src="../Landing Page/Men's clothing/adidas-mufc-og-hd.jpg"></a>
           <p class="price">€100.00</p>
           <p class="initial-price">€100.00 Initial Price</p>
-          <p class="product">Adidas Manchester United FC Men's Hoodie</p>
+          <p class="product"><a href="#">Adidas Manchester United FC Men's Hoodie</a></p>
         </div>
         <div class="outfits shop-men-clothing">
-          <img src="../Landing Page/Men's clothing/new-balance-1000-papoutsi-classics.jpg">
+          <a href="#"><img src="../Landing Page/Men's clothing/new-balance-1000-papoutsi-classics.jpg"></a>
           <p class="price">€169.95</p>
           <p class="initial-price">€169.95 Initial Price</p>
-          <p class="product">New Balance M1000 Unisex Shoes</p>
+          <p class="product"><a href="#">New Balance M1000 Unisex Shoes</a></p>
         </div>
       </div>
-      <div class="shop-women">
+      <div id="women" class="shop-women">
         <div class="outfits shop-women-clothing">
-          <img src="../Landing Page/Women's clothing/hoodrich-intel-v2-legging-blk.jpg">
+          <a href="#"><img src="../Landing Page/Women's clothing/hoodrich-intel-v2-legging-blk.jpg"></a>
           <p class="price">€32.00</p>
           <p class="initial-price">€32.00 Initial Price</p>
-          <p class="product">Hoodrich Intel V2 Women's Leggings</p>
+          <p class="product"><a href="#">Hoodrich Intel V2 Women's Leggings</a></p>
         </div>
         <div class="outfits shop-women-clothing">
-          <img src="../Landing Page/Women's clothing/converse-run-star-hike.jpg">
+          <a href="#"><img src="../Landing Page/Women's clothing/converse-run-star-hike.jpg"></a>
           <p class="price">€80.00</p>
           <p class="initial-price">€80.00 Initial Price</p>
-          <p class="product">Converse Run Star Hike Women's Platform Boots</p>
+          <p class="product"><a href="#">Converse Run Star Hike Women's Platform Boots</a></p>
         </div>
         <div class="outfits shop-women-clothing">
-          <img src="../Landing Page/Women's clothing/the-north-face-summit-oh-hd-khk-wh.jpg">
+          <a href="#"><img src="../Landing Page/Women's clothing/the-north-face-summit-oh-hd-khk-wh.jpg"></a>
           <p class="price">€60.00</p>
           <p class="initial-price">€60.00 Initial Price</p>
-          <p class="product">The North Face Summit Women's Hoodie</p>
+          <p class="product"><a href="#">The North Face Summit Women's Hoodie</a></p>
         </div>
         <div class="outfits shop-women-clothing">
-          <img src="../Landing Page/Women's clothing/new-balance-ct302-papoutsi-court.jpg">
+          <a href="#"><img src="../Landing Page/Women's clothing/new-balance-ct302-papoutsi-court.jpg"></a>
           <p class="price">€75.00</p>
           <p class="initial-price">€75.00 Initial Price</p>
-          <p class="product">New Balance CT302 Women's Shoes</p>
+          <p class="product"><a href="#">New Balance CT302 Women's Shoes</a></p>
         </div>
       </div>
 
-      <div class="shop-kids">
+      <div id="kids" class="shop-kids">
         <div class="outfits shop-kids-clothing">
-          <img src="../Landing Page/Kids clothing/nike-miler-t-sht-org-gry.jpg">
+          <a href="#"><img src="../Landing Page/Kids clothing/nike-miler-t-sht-org-gry.jpg"></a>
           <p class="price">€20.00</p>
           <p class="initial-price">€20.00 Initial Price</p>
-          <p class="product">Nike Miler Infant's Set</p>
+          <p class="product"><a href="#">Nike Miler Infant's Set</a></p>
         </div>
         <div class="outfits shop-kids-clothing">
-          <img src="../Landing Page/Kids clothing/mckenzie-ess-edge-flc-pnt-2-blk.jpg">
+          <a href="#"><img src="../Landing Page/Kids clothing/mckenzie-ess-edge-flc-pnt-2-blk.jpg"></a>
           <p class="price">€15.00</p>
           <p class="initial-price">€24.00 Initial Price</p>
-          <p class="product">McKenzie Essential Edge Kids' Track Pants</p>
+          <p class="product"><a href="#">McKenzie Essential Edge Kids' Track Pants</a></p>
         </div>
         <div class="outfits shop-kids-clothing">
-          <img src="../Landing Page/Kids clothing/nike-revolution-6-nn-psv.jpg">
+          <a href="#"><img src="../Landing Page/Kids clothing/nike-revolution-6-nn-psv.jpg"></a>
           <p class="price">€35.00</p>
           <p class="initial-price">€35.00 Initial Price</p>
-          <p class="product">Nike Revolution 6 Kids' Running Shoes</p>
+          <p class="product"><a href="#">Nike Revolution 6 Kids' Running Shoes</a></p>
         </div>
         <div class="outfits shop-kids-clothing">
-          <img src="../Landing Page/Kids clothing/converse-chuck-taylor-all-star.jpg">
+          <a href="#"><img src="../Landing Page/Kids clothing/converse-chuck-taylor-all-star.jpg"></a>
           <p class="price">€45.00</p>
           <p class="initial-price">€55.00 Initial Price</p>
-          <p class="product">Converse Chuck Taylor All Star High Kids' Boots</p>
+          <p class="product"><a href="#">Converse Chuck Taylor All Star High Kids' Boots</a></p>
         </div>
       </div>
     </div>
@@ -244,11 +249,11 @@
     <div class="shop-brands">
       <div class="new-balance">
         <img src="../Landing Page/Brand Clothing/new-balance-footwear.webp">
-        <a href="#">New Balance Footwear →</a>
+        <a href="../Brands Section/newbalance.html">New Balance Footwear →</a>
       </div>
       <div class="emporio-armani">
         <img src="../Landing Page/Brand Clothing/ea7-clothing.webp">
-        <a href="#">Emporio Armani Clothing →</a>
+        <a href="../Brands Section/ea7.html">Emporio Armani Clothing →</a>
       </div>
     </div>
 
@@ -329,7 +334,9 @@
 
 
   <script src="script.js"></script>
+
   <script src="https://kit.fontawesome.com/78055d794c.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

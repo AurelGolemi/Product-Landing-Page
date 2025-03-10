@@ -80,11 +80,11 @@ const options = document.querySelectorAll('.chat-option');
 
 // Toggle chat visibility
 chatToggle.addEventListener('click', () => {
-  chatBox.classList.toggle = 'visible';
+  chatBox.classList.toggle('visible');
 });
 
 chatClose.addEventListener('click', () => {
-  chatBox.classList.remove = 'visible';
+  chatBox.classList.remove('visible');
 });
 
 // Handle option selection
@@ -120,19 +120,98 @@ function handleBotResponse(message) {
   const botMessage = document.createElement('p');
   botMessage.className = 'bot-message';
 
-  if(message.includes('👖 Looking for clothes')) {
+  // Normalize message (lowercase, trimmed) for better matching
+  const normalizedMessage = message.toLowerCase().trim();
+
+  // Predefined responses
+
+  if(message === "I'm looking for clothes.") {
     botMessage.textContent = 'Great! Are you shopping for men, women or kids?';
-  } else if(message.includes('🌍 Where to buy')) {
+  } else if(message === "Where can I get them?") {
     botMessage.textContent = 'You can shop online or visit our nearest store.';
-  } else if(message.includes('❓ Recommendations')) {
+  } else if(message === "I need recommendations about your products.") {
     botMessage.textContent = 'We recommend checking out our latest collections for the season.';
-  } else if(message.includes('🚚 Delivery options')) {
+  } else if(message === "Where to deliver?") {
     botMessage.textContent = 'Please provide your address for delivery.';
-  } else {
-    botMessage.textContent = 'Thank you for reaching out! How else can we assist you?';
+  } 
+
+  // Dynamic responses based on keywords
+    // else if (normalizedMessage.includes("men")) {
+    //   botMessage.textContent = "We have a great selection of men's clothing! Check out our latest men's jackets, shirts and jeans.";
+    // } else if (normalizedMessage.includes("women")) {
+    //   botMessage.textContent = "Our women's collection is perfect for every occasion! Explore dresses, tops and accessories!";
+    // } else if (normalizedMessage.includes("kids")) {
+    //   botMessage.textContent = "For kids, we recommend our durable and stylish clothing line. Browse shirts, pants and more!";
+    // } else if (normalizedMessage.includes("recommend")) {
+    //   botMessage.textContent = "Based on your preferences, we suggest exploring our trending products this season!";
+    // } else if (normalizedMessage.includes("delivery")) {
+    //   botMessage.textContent = "We deliver across various locations. Please share your city or zip code for details!";
+    // }
+
+
+  if (normalizedMessage.includes("men")) {
+    botMessage.innerHTML = `
+      <div id="men" class="shop-men"">
+        <h4>Top picks for Men:</h4>
+        <div class="shop-men-clothing" style="margin: 10px;">
+          <img src="../Client/Men/Men Clothing Fits/nike-m-nk-tch-flc-fz-wr-hoodie.jpg"><br>
+          <a href="../Client/Men/men.html">Nike Tech Fleece Men's Track Top</a><br>
+        </div> 
+        <div class="shop-men-clothing" style="margin: 10px;">
+          <img src="../Client/Men/Men Clothing Fits/the-north-face-m-kaveh-fullzip-tnf-black-smoke.jpg"><br>
+          <a href="../Client/Men/men.html">The North Face Tek Men's Track Top</a>
+        </div> 
+      </div>
+
+      <p style="margin-top: 4px;">Here are some recommendations for men's clothing: </p>
+      <ul>
+        <li><a href="../Client/Men/men.html">Men's Clothing</a></li>
+      </ul>
+    `
+  } else if (normalizedMessage.includes("woman")) {
+    botMessage.innerHTML = `
+      <div id="women" class="shop-women"">
+        <h4>Top picks for Women:</h4>
+        <div class="shop-women-clothing" style="margin: 10px;">
+          <img src="../Client/Women/Women Clothing Fits/nike-w-nsw-phnx-flc-oos-crew.jpg"><br>
+          <a href="../Client/Men/men.html">Nike Phoenix Fleece Oversized Women's Sweatshirt</a><br>
+        </div> 
+        <div class="shop-women-clothing" style="margin: 10px;">
+          <img src="../Client/Women/Women Clothing Fits/the-north-face-w-relax-mtn-photo-ls-tnf-black.jpg"><br>
+          <a href="../Client/Women/women.html">The North Face Mountain Women's Long-sleeve Top</a>
+        </div> 
+      </div>
+
+      <p style="margin-top: 4px;">Here are some recommendations for women's clothing: </p>
+      <ul>
+        <li><a href="../Client/Women/women.html">Women's Clothing</li>
+      </ul>
+    `
+  } else if (normalizedMessage.includes("kids")) {
+    botMessage.innerHTML = `
+      <div id="kids" class="shop-kids"">
+        <h4>Top picks for Men:</h4>
+        <div class="shop-kids-clothing" style="margin: 10px;">
+          <img src="../Client/Kids/Kids Clothing Fits/nike-b-nsw-tch-flc-fz-pd.jpg"><br>
+          <a href="../Client/Kids/kids.html">Nike Tech Fleece Kids' Track Top</a><br>
+        </div> 
+        <div class="shop-kids-clothing" style="margin: 10px;">
+          <img src="../Client/Kids/Kids Clothing Fits/jordan-jmpmn-pad-jkt-blk-gry.jpg"><br>
+          <a href="../Client/Men/men.html">Jordan Jumpman Kids' Jacket</a>
+        </div> 
+      </div>
+
+    <p style="margin-top: 4px;">Here are some recommendations for kids clothing: </p>
+    <ul>
+      <li><a href="../Client/Kids/kids.html">Kids' Clothing</li>
+    </ul>
+  `
+  }
+  // Default fallback
+  else {
+    botMessage.textContent = 'Thank you for reaching out! How else can we assist you? Can you provide more details so we can assist you better?';
   }
 
   chatBody.appendChild(botMessage);
   chatBody.scrollTop = chatBody.scrollHeight;
 }
-
